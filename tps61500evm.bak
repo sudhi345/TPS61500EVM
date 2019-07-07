@@ -99,12 +99,12 @@ $EndComp
 $Comp
 L Device:C C1
 U 1 1 5D1F7E5F
-P 4050 2200
-F 0 "C1" H 4050 2300 50  0000 L CNN
-F 1 "10uF" H 4050 2100 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4088 2050 50  0001 C CNN
-F 3 "~" H 4050 2200 50  0001 C CNN
-	1    4050 2200
+P 3850 2200
+F 0 "C1" H 3850 2300 50  0000 L CNN
+F 1 "10uF" H 3850 2100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3888 2050 50  0001 C CNN
+F 3 "~" H 3850 2200 50  0001 C CNN
+	1    3850 2200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -130,7 +130,7 @@ F 3 "~" H 5800 1950 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4050 2050 4050 2000
+	3850 2050 3850 2000
 Wire Wire Line
 	5500 1950 5600 1950
 $Comp
@@ -147,12 +147,12 @@ $EndComp
 $Comp
 L power:GND #PWR0102
 U 1 1 5D1F8894
-P 3800 2400
-F 0 "#PWR0102" H 3800 2150 50  0001 C CNN
-F 1 "GND" H 3805 2227 50  0000 C CNN
-F 2 "" H 3800 2400 50  0001 C CNN
-F 3 "" H 3800 2400 50  0001 C CNN
-	1    3800 2400
+P 3600 2400
+F 0 "#PWR0102" H 3600 2150 50  0001 C CNN
+F 1 "GND" H 3605 2227 50  0000 C CNN
+F 2 "" H 3600 2400 50  0001 C CNN
+F 3 "" H 3600 2400 50  0001 C CNN
+	1    3600 2400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -233,7 +233,7 @@ Wire Wire Line
 Wire Wire Line
 	7100 1950 7250 1950
 Wire Wire Line
-	4050 2350 4050 2400
+	3850 2350 3850 2400
 Wire Wire Line
 	3850 4150 4050 4150
 Wire Wire Line
@@ -305,7 +305,7 @@ Text Label 4800 3750 0    50   ~ 0
 DIMC
 Text Label 4800 1950 0    50   ~ 0
 Vin
-Text Label 4550 2000 2    50   ~ 0
+Text Label 4350 2000 2    50   ~ 0
 Vin
 Text Label 6700 1950 2    50   ~ 0
 Vout
@@ -371,22 +371,22 @@ Wire Wire Line
 $Comp
 L Device:C C6
 U 1 1 5D21B57E
-P 4400 2200
-F 0 "C6" H 4450 2300 50  0000 L CNN
-F 1 "C" H 4450 2100 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4438 2050 50  0001 C CNN
-F 3 "~" H 4400 2200 50  0001 C CNN
-	1    4400 2200
+P 4200 2200
+F 0 "C6" H 4250 2300 50  0000 L CNN
+F 1 "C" H 4250 2100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4238 2050 50  0001 C CNN
+F 3 "~" H 4200 2200 50  0001 C CNN
+	1    4200 2200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4400 2050 4400 2000
+	4200 2050 4200 2000
 Wire Wire Line
-	4400 2000 4050 2000
+	4200 2000 3850 2000
 Wire Wire Line
-	4400 2350 4400 2400
+	4200 2350 4200 2400
 Wire Wire Line
-	4400 2400 4050 2400
+	4200 2400 3850 2400
 $Comp
 L Device:C C7
 U 1 1 5D21DAD7
@@ -438,12 +438,12 @@ $EndComp
 $Comp
 L Connector:Screw_Terminal_01x02 J1
 U 1 1 5D224F2F
-P 3550 2100
-F 0 "J1" H 3700 2000 50  0000 C CNN
-F 1 "Vin" H 3700 2100 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 3550 2100 50  0001 C CNN
-F 3 "~" H 3550 2100 50  0001 C CNN
-	1    3550 2100
+P 3350 2100
+F 0 "J1" H 3500 2000 50  0000 C CNN
+F 1 "Vin" H 3500 2100 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 3350 2100 50  0001 C CNN
+F 3 "~" H 3350 2100 50  0001 C CNN
+	1    3350 2100
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -465,7 +465,7 @@ Text Label 7150 2400 0    50   ~ 0
 FB
 Text Notes 2950 3600 0    50   ~ 0
 PWM input \nfor dimming\n
-Text Notes 2900 2350 0    50   ~ 0
+Text Notes 2700 2350 0    50   ~ 0
 Input voltage\n2.9-18V
 Text Notes 3800 4900 2    50   ~ 0
 Over Voltage Protection\nresistive voltage divider\n(R1 is external)(1.229V)\nChoose R1 according to\n1.229 + 0.1229*R1 = Vout\nR1 range - 14k to 315k
@@ -495,17 +495,17 @@ External High Power LEDs
 Text Notes 7550 2750 0    50   ~ 0
 External feedback resistor\n(High wattage)
 Wire Wire Line
-	4400 2000 4550 2000
-Connection ~ 4400 2000
+	4200 2000 4350 2000
+Connection ~ 4200 2000
 Wire Wire Line
-	3750 2000 4050 2000
-Connection ~ 4050 2000
+	3550 2000 3850 2000
+Connection ~ 3850 2000
 Wire Wire Line
-	3750 2100 3750 2400
+	3550 2100 3550 2400
 Wire Wire Line
-	3750 2400 3800 2400
+	3550 2400 3600 2400
 Wire Wire Line
-	3800 2400 4050 2400
-Connection ~ 3800 2400
-Connection ~ 4050 2400
+	3600 2400 3850 2400
+Connection ~ 3600 2400
+Connection ~ 3850 2400
 $EndSCHEMATC
