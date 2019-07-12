@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:tps61500evm-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -476,7 +477,7 @@ U 1 1 5D235B57
 P 3650 4250
 F 0 "J3" H 3750 4150 50  0000 C CNN
 F 1 "OVP_Resistor(R1)" H 4000 4250 50  0000 C CNN
-F 2 "lib_fp:PinHeader_1x02_P2.54mm_Vertical" H 3650 4250 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 3650 4250 50  0001 C CNN
 F 3 "~" H 3650 4250 50  0001 C CNN
 	1    3650 4250
 	-1   0    0    1   
